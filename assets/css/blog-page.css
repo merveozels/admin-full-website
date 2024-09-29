@@ -1,0 +1,589 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  font-family: "Inter";
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+/* Ali Starts here */
+
+.container {
+  background-image: url("../img/background-img.png") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center
+}
+
+.header-mobile {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 16px;
+  border-bottom: 1px solid transparent;
+  align-items: center;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.sign-log {
+  display: none;
+}
+
+.hamburger-icon {
+  justify-self: end;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color:#F9F9F9 ;
+}
+
+.hero p {
+  padding-top: 16px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: center;
+  color:#F9F9F9 ;
+}
+
+.tags {
+  display: flex;
+  gap: 16px;
+  padding:16px 16px 24px 16px ;
+}
+.tags a {
+  font-family: "Inter";
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  padding:4px 12px ;
+  background-color: rgb(247, 247, 248);
+  border-radius: 5px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+
+}
+
+.hero {
+  padding:32px 6px 40px 16px ;
+}
+
+.filter img {
+  margin-inline:auto;
+}
+
+@media (width>=768px) {
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 32px;
+    align-items: center;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .sign-log {
+    display: none;
+  }
+  .blog-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  } 
+  
+  .blog-content-inner{
+    max-width: 850px;
+  }
+  
+  .rating-avatar{
+    display: flex;
+  }
+  
+  .rating-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .rating-content{
+    max-width: 850px;
+  }
+  
+ 
+}
+
+@media (width>=1280px) {
+
+  .header-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-left-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .desktop-only {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .desktop-only a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  .hero {
+    max-width: 640px;
+    margin-inline: auto;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.01em;
+  }
+
+  .hero p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.10000000149011612px;
+    padding-top: 24px;
+  }
+
+  .resources {
+    display: flex;
+    gap: 12px;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  .site-left-side > a > img {
+    padding-right: 32px;
+  }
+
+  .sign-log {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    left: 420px;
+  }
+
+  .sign-up a {
+    color:#437EF7;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .log-in a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding:12px 18px;
+    background-color:#437EF7 ;
+    border-radius: 6px;
+    margin-left:24px ;
+  }
+  .blog-container{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 62px;
+  } 
+}
+
+/* Ali ends here */
+
+
+/* merve css starts here */
+/*? Blog part coming */
+
+.blog-content{
+  padding-inline: 16px;
+  margin-top: 40px;
+  margin-inline: auto;
+}
+
+.blog-content h4{
+  text-align: center;
+  margin-top: 42px;
+  margin-bottom:12px ;
+}
+
+.blog-content p{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #5F6D7E;
+  margin-bottom: 24px;
+}
+
+.blog-content-inner{
+  border: 1px solid #EAEBF0;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  max-width: 550px;
+}
+
+.blog-content-inner-photo{
+  position: relative;
+  max-width: 550px;
+  margin-inline: auto;
+  display: inline-block;
+}
+
+.blog-content-inner-photo img{
+  border-top-left-radius: 7px;  
+  border-top-right-radius: 7px; 
+}
+
+.avatar{
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+}
+
+.blog-content-inner-calender{
+  display: flex;
+  gap: 28px;
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-inline: 32px;
+  color: #437EF7;
+  max-width: 550px;
+
+}
+
+.calender{
+  color: #5F6D7E;
+}
+
+.blog-content-inner-text h4 {
+  text-align: left;
+  padding-inline: 32px;
+  margin-bottom: 16px;
+  max-width: 550px;
+
+}
+
+.blog-content-inner-text p{
+  text-align: left;
+  padding-inline: 32px;
+  margin-bottom: 24px;
+}
+
+.blog-content-inner-link{
+  display: flex;
+  gap: 6px;
+  margin-bottom:24px ;
+  padding-inline: 32px;
+  max-width: 550px;
+
+
+}
+
+.blog-content-inner-link a{
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+  color: #437EF7;
+  display: inline-block;
+}
+/* merve ends starts here */
+
+
+
+/* yagmur css starts here */
+
+.footer {
+  padding: 32px 16px;
+  background-color: #151B28;
+}
+
+.footer-top h3 {
+  font-family: 'Inter';
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  color: #F9F9F9;
+  margin-bottom: 16px;
+}
+
+.butons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-bottom: 1px solid #2E3545;
+}
+
+
+.sign-up-btn a {
+  background-color: #437EF7;
+  box-shadow: 0px 1px 2px 0px #1018280A;
+  border-radius: 6px;
+  padding-inline: 144px;
+  padding-block: 13px;
+  font-family: 'Inter';
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+}
+
+.log-in-btn a {
+  background-color: #2C3444;
+  border: 1px solid #2E3545;
+  box-shadow: 0px 1px 2px 0px #1018280A;
+  border-radius: 6px;
+  padding-inline: 144px;
+  padding-block: 13px;
+  margin-bottom: 24px;
+  font-family: 'Inter';
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #F9F9F9;
+  text-decoration: none;
+  display: block;
+}
+
+.footer-middle {
+  padding-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+  border-bottom: 1px solid #2E3545;
+}
+
+.icon img {
+  margin-bottom: 22px;
+}
+
+.icon p {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #A5ACBA;
+  margin-bottom: 24px;
+}
+
+.lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px;
+  list-style: none;
+  justify-content:space-between;
+  margin-bottom: 24px;
+}
+
+.lists ul {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #F9F9F9;
+  padding: 0px;
+  margin-bottom: 16px;
+}
+
+.lists a {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #A5ACBA;
+  text-decoration: none;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-bottom {
+  display: flex;
+  gap: 34px;
+  padding-top: 24px;
+  align-items: end;
+}
+
+.footer-bottom-text p {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #A5ACBA;
+}
+
+.social-media-footer {
+  display: flex;
+  gap: 24px;
+}
+
+@media (width > 758px) {
+
+  .footer {
+    padding-inline: 32px;
+    padding-block: 40px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 5px;
+ }
+
+  .footer-top h3 {
+    margin-bottom: 32px;
+  }
+
+  .butons {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .sign-up-btn a {
+    padding: 12px 18px;
+    background-color: #437EF7;
+    border-radius: 6px;
+    display: inline-block;
+  }
+
+  .log-in-btn a {
+    padding: 12px 18px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .footer-middle {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    gap: 395px;
+    align-items: center;
+  }
+
+}
+
+@media (width > 1280px) {
+  .footer {
+    padding-inline: 80px;
+    padding-block: 64px;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-bottom-border {
+    border-bottom: 1px solid #2E3545;
+  }
+
+  .footer-middle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 152px;
+  }
+
+  .lists {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 142px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+
+/* yagmur css ends here */

@@ -1,0 +1,764 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Inter", system-ui;
+  margin-inline: auto;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* reset end */
+
+.header-desktop{
+  background-color: #EAEBF0;
+}
+.graphic-content{
+  background-color: #EAEBF0;
+  
+}
+
+.container{
+  color: #272D37 ;
+  display: flex;
+  flex-direction: column;
+  background-color:#EAEBF0 ;
+  padding-inline: 16px;
+
+
+}
+
+.header-mobile{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #EAEBF0;
+  background-color:#EAEBF0 ;
+  padding-inline: 16px;
+}
+
+.graphic-content{
+  margin-inline: auto;
+}
+
+/* header part over */
+
+/*! graphic-content start here */
+
+.graphic-photo-inner img{
+  margin-inline: auto;
+}
+
+.lightining-inner{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.blue-lightining-text{
+  color: #437EF7;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+}
+
+h1{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.graphic-content-p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #5F6D7E;
+  margin-bottom: 32px;
+}
+
+.graphic-btn-inner{
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.get-started{
+  text-decoration: none;
+  color: white;
+  background-color: #437EF7;
+  padding: 12px 18px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-us{
+  text-decoration: none;
+  color: #437EF7;
+  background-color: white;
+  padding: 12px 18px;
+  text-align: center;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+}
+
+.get-started:hover{
+  background-color: white;
+  color: #437EF7;
+}
+
+.contact-us:hover{
+  color: white;
+  background-color: #437EF7;
+}
+
+/* number-users-content start here */
+
+.number-users-content{
+  padding-top: 32px;
+  margin-bottom: 32px;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.number-users-inner{
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.number-users-h{
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.number-users-p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #5F6D7E;
+}
+
+/* reviwe part start */
+
+.review-content{
+  gap: 16px;
+  align-items: center;
+  align-content: center;
+  background-color: #2B63D9;
+  padding-inline: 16px;
+  padding-bottom: 32px;
+}
+
+.box-container{
+  display: grid;
+  gap:16px;
+}
+
+.review-h{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 12px;
+  color: white;
+  margin-top: 32px;
+}
+
+.review-p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: center;
+  color: #B1CCFB;
+  margin-bottom: 32px;
+}
+
+.review-box{
+  background-color: #3971E7;
+  padding: 16px;
+}
+
+.box-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-more{
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+  color: #437EF7;
+  padding: 12px;
+  background-color: white;
+}
+
+.box-top-h{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: white;
+  margin-top: 16px;
+  margin-bottom: 8px;
+
+}
+
+.box-p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #B1CCFB;
+}
+
+/* motto-content start here */
+
+.motto-content{
+  margin-top: 32px;
+  padding-inline: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.motto-span{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color:#437EF7;
+}
+
+.motto-h{
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #272D37;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+.motto-btn-area{
+  display: flex;
+  background-color: #437EF7;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 6px;
+  max-width: 135px;
+  margin-bottom: 32px;
+}
+
+.strt-btn{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+}
+.header-desktop{
+  display: none;
+}
+
+.tablet-photo{
+  display: none;
+}
+.desktop-photo{
+  display: none;
+}
+
+.web{
+  display: none;
+}
+
+/*  */
+
+
+
+
+
+
+
+/* tablet versiyon */
+@media (width >= 758px){
+  .tablet-photo{
+    display: block;
+  }
+
+  .mobile-photo{
+    display: none;
+  }
+  .graphic-btn-inner{
+    display: flex;
+    flex-direction: row;
+  }
+  .number-users-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-items: center;
+    justify-content: center;
+    padding-inline: 25px;
+  }
+  .box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .web{
+    display:grid;
+  }
+}
+
+/* desktop version */
+@media(width >= 1280px){
+
+    .arrows-nav{
+      display: flex;
+      gap: 6px;
+    }
+    .graphic-content{
+      display: flex;
+      flex-direction: row-reverse;
+      margin-top: 55px;
+      justify-content: space-between;
+    }
+    .number-users-content{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .graphic-text-inner{
+      align-self: center;
+    }
+
+    .header-mobile{
+      display: none;
+    }
+  
+    .header-desktop{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-inline: 112px;
+      padding-block:20px;
+    }
+  
+    .dekstop-nav {
+      margin-right:auto;
+      gap: 32px;
+      margin-left: 64px;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .dekstop-nav a{
+      text-decoration: none;
+      color: #272D37;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 22px;
+      text-align: left;
+    }
+
+    .desktop-links a{
+      text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+    padding: 12px 18px;
+    border-radius: 6px;
+    }
+
+    .white-sign{
+      color: #437EF7;
+    }
+  
+    .blue-log{
+      color: white;
+      background-color:  #437EF7;
+    }
+    .box-container{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .motto-content{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .motto-text-inner{
+     align-self: center;
+     max-width: 590px;
+    }
+
+  }
+
+  /* Css Ali starts here */
+  ul  {
+    padding: 0px;
+  }
+  
+  .container {
+    padding-inline: 16px;
+  }
+  
+  .team-member {
+    margin-block: 32px;
+  }
+  
+  
+  .team-part-text {
+    margin-block: 32px;
+    text-align: center;
+  }
+  
+  .team-part-text h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #272D37;
+    margin-bottom: 12px;
+  }
+  
+  .team-part-text p {
+    line-height: 24px;
+    letter-spacing: -0.10000000149011612px;
+    color: #5F6D7E;
+  }
+  
+  .team-member-text h2 {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color:#272D37 ;
+  }
+  
+  .team-member-text h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: left;
+    color:#437EF7
+  }
+  
+  .team-member-text p {
+    line-height: 24px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: left;
+    color:#5F6D7E;
+    margin-block: 12px;
+    }
+  
+  .social-media-icons {
+    display: flex;
+    gap: 16px;
+  }
+  
+  
+  /* burada faq kismi bulunmakta. */
+  
+  .faq-part {
+    margin-bottom: 40px;
+  }
+  
+  .faq-part-text h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #272D37;
+    margin-block: 40px 12px;
+  }
+  
+  .faq-part-text p {
+    line-height: 24px;
+    letter-spacing: -0.10000000149011612px;
+    color:#5F6D7E;
+    margin-bottom: 32px
+    }
+  
+  .faq-part-text {
+    text-align: center;
+  }
+  
+  .first-question {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(234, 235, 240);
+    padding-bottom: 20px;
+  }
+  
+  .first-question h4 {
+    padding: 4px 12px;
+    color: #437EF7;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.10000000149011612px;
+    background-color: rgb(245, 250, 255);
+    border-radius: 5px;
+  }
+  
+  .faq {
+    border: 1px solid rgb(234, 235, 240);
+    padding: 20px 32px 16px;
+  }
+  
+  .faq  h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.10000000149011612px;
+    color: #272D37;
+  }
+  
+  .question {
+    border-bottom: 1px solid rgb(234, 235, 240);
+    padding-block: 16px;
+  }
+  
+  .question p {
+    display: flex;
+    gap:32px;
+  }
+  
+  .desktop-detail {
+    display: none;
+  }
+  
+  .question:last-child {
+    border:none
+  }
+  
+  
+  /* faq partı bitt */
+  
+  /* burada sign-up bulunmakta */
+  
+  .touchable {
+    background-color: rgb(43, 99, 217);
+    padding: 32px 16px;
+  }
+  
+  .touchable h1 {
+    font-family: "Inter";
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: white;
+  }
+  
+  .sign a {
+    display: ruby-text;
+    background-color: white;
+    padding: 12px 144px;
+    border-radius: 6px;
+    text-decoration: none;
+    list-style: none;
+    color: #437EF7;
+    margin-top: 16px;
+  }
+  
+  .log a {
+    display: ruby-text;
+    background-color: rgb(67, 126, 247);
+    padding: 12px 149px;
+    border-radius: 6px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+  }
+  
+  /* burada sign up login kısmı bitiyor */
+  
+  /* burada footer kısmı baslıyor */
+  
+  .footer {
+    background-color: rgb(21, 27, 40);
+    color: white;
+    padding: 16px 32px;
+  }
+  
+  .footer-last-img  {
+    margin-block: 16px 28px ;
+  }
+  
+  .footer li {
+    list-style: none;
+  }
+  
+  .links > ul > li:first-child a {
+    color:#F9F9F9;
+  }
+  
+  .links-part {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:24px 64px ;
+    padding: 0;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #A5ACBA;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.10000000149011612px;
+  }
+  
+  .footer-down {
+    border-top: 1px solid rgb(46, 53, 69);
+    padding-block: 24px 32px;
+    background-color: rgb(21, 27, 40);
+    color: #A5ACBA;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: center;
+  }
+  
+  @media (width>=768px) {
+    .team-member {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+  
+    /* bu kisimda log-in ve sing-up bulunmakta. ve olculerinin kuculmesi gerekiyor. */
+    .sign a {
+      display: block;
+      padding: 12px 18px;
+    }
+  
+    .log a {
+      display: block;
+      padding: 12px 18px;
+    }
+  
+    .sign-log {
+      display: flex;
+      padding-inline: auto;
+      align-items: baseline;
+      gap: 16px;
+      padding-inline: auto;
+      justify-content: center;
+    }
+  
+    .links-part {
+      display: grid;
+      grid-template-columns:repeat(3,1fr)  ;
+    }
+  
+  }
+  
+  @media (width>=1280px) {
+    .team-members {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 64px;
+    }
+    .team-member {
+      gap: 24px;
+    }
+  
+    .question {
+      display: flex;
+    }
+
+    .desktop-detail {
+      display: flex;
+    }
+  
+    .touchable { 
+      padding-block:64px ;}
+  
+    .touchable h1 {
+      width: 600px;
+      margin-inline: auto;
+    }
+  
+    
+  
+    .log {
+      display: none;
+    }
+  
+    .question {
+      justify-content: space-between;
+  
+    }
+  
+    .desktop-detail {
+      display: flex;
+    }
+  
+    .footer {
+      display: flex;
+      padding: 64px;
+      justify-content: space-evenly;
+    }
+  }
+  
+  /* Ali CSS ends here */
+  

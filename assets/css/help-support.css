@@ -1,0 +1,507 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Inter", system-ui;
+  margin-inline: auto;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+li{
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* reset end */
+
+.header-mobile{
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 16px;
+}
+
+.header-desktop{
+  display: none;
+}
+
+.container{
+  padding-inline: 16px;
+}
+
+.avatar-content{
+  margin-top: 32px;
+}
+
+.home-span{
+  color: #5F6D7E;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+}
+
+.manuel-arrow{
+  color: black;
+}
+
+.page-blue {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+  color: #437EF7;
+}
+
+.avatar-content-inner{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  margin-top: 34px;
+}
+
+.avatar-text h3{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #272D37;
+}
+
+.avatar-text p{
+  color: #5F6D7E;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: left;
+
+}
+
+
+/* ? avatar content done */
+
+/* css ali starts here FAQ PART */
+
+
+.faq-part {
+  padding-top: 40px;
+  margin-bottom: 40px;
+  padding-inline: 16px;
+}
+
+.first-question {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(234, 235, 240);
+  padding-bottom: 20px;
+}
+
+.first-question h4 {
+  padding: 4px 12px;
+  color: #437EF7;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  background-color: rgb(245, 250, 255);
+  border-radius: 5px;
+}
+
+.faq {
+  border: 1px solid rgb(234, 235, 240);
+  padding: 20px 32px 16px;
+  border-radius: 5px;
+}
+
+.faq  h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #272D37;
+}
+
+.question {
+  border-bottom: 1px solid rgb(234, 235, 240);
+  padding-block: 16px;
+}
+
+.question p {
+  display: flex;
+  gap:32px;
+}
+
+.desktop-detail {
+  display: none;
+}
+
+.question:last-child {
+  border:none
+}
+
+
+/* faq partı bitt */
+
+
+
+
+/* desktop version */
+@media(width >= 1280px){
+
+  .arrows-nav{
+    display: flex;
+    gap:6px;
+  }
+  .graphic-content{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 55px;
+    justify-content: space-between;
+  }
+  .number-users-content{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .graphic-text-inner{
+    align-self: center;
+  }
+
+  .header-mobile{
+    display: none;
+  }
+
+  .question {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .desktop-detail {
+    display: flex;
+    justify-items: end;
+  }
+
+  .header-desktop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 112px;
+    padding-block:20px;
+  }
+
+  .dekstop-nav {
+    margin-right:auto;
+    gap: 32px;
+    margin-left: 64px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .dekstop-nav a{
+    text-decoration: none;
+    color: #272D37;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  .desktop-links a{
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  padding: 12px 18px;
+  border-radius: 6px;
+  }
+
+  .white-sign{
+    color: #437EF7;
+  }
+
+  .blue-log{
+    color: white;
+    background-color:  #437EF7;
+  }
+}
+
+/* yagmur section start */
+
+.easier-integrations {
+  padding-block: 32px;
+  padding-inline: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.easier-integrations-text h3 {
+  font-family: 'Inter';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #272D37;
+  margin-bottom: 12px;
+}
+
+.easier-integrations-text p {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #5F6D7E;
+}
+
+.integrations {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+}
+
+.integration {
+  border: 1px solid #EAEBF0;
+  box-shadow: 0px 1px 2px 0px #1018280A;
+  padding-block: 16px;
+  border-radius: 5px;
+}
+
+.integration img {
+  display: block;
+  margin: auto;
+  margin-bottom: 16px;
+}
+
+.integration h4 {
+  font-family: 'Inter';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #272D37;
+  margin-bottom: 8px;
+}
+
+.integration p {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #5F6D7E;
+  padding-inline: 16px;
+}
+
+.footer {
+  background-color: #151B28;
+  padding-inline: 16px;
+  padding-block: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-top img {
+  margin-bottom: 22px;
+}
+
+.footer-top p {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #A5ACBA;
+  margin-bottom: 16px;
+}
+
+.btns {
+  display: flex;
+  gap: 0px;
+  text-decoration: none;
+  margin-bottom: 28px;
+}
+
+.enter-email-btn a {
+  background-color: #2C3444;
+  border: 1px solid #2E3545;
+  padding-block: 16px;
+  padding-left: 16px;
+  padding-right: 100px;
+  display: block;
+  
+  color: #A5ACBA;
+  font-family: 'Inter';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.10000000149011612px;
+}
+
+.submit-btn a {
+  background-color: #437EF7;
+  padding: 12px 18px;
+  display: block;
+
+  font-family: 'Inter';
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+
+.lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px;
+  list-style: none;
+  justify-content:space-between;
+  margin-bottom: 24px;
+}
+
+.lists ul {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #F9F9F9;
+  padding: 0px;
+  margin-bottom: 16px;
+}
+
+.lists a {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #A5ACBA;
+  text-decoration: none;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-bottom-border {
+  border-top: 1px solid #2E3545;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.footer-bottom p {
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  color: #A5ACBA;
+}
+
+@media (width > 758px) {
+  .easier-integrations {
+    padding-inline: 32px;
+    padding-block: 40px;
+  }
+
+  .integrations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tb {
+    display: none;
+  }
+
+  .footer {
+    padding-inline: 32px;
+    padding-block: 40px;
+  }
+
+  .lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px;
+  }
+}
+
+@media (width > 1280px) {
+  .easier-integrations {
+    padding-block: 64px;
+    padding-inline: 80px;
+    gap: 64px;
+  }
+
+  .tb {
+    display: block;
+  }
+
+  .integrations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer {
+    padding-block: 64px;
+    padding-inline: 80px;
+  }
+
+  .footer-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 183px;
+  }
+
+  .lists {
+    gap: 183px;
+  }
+
+}
+
